@@ -1,0 +1,23 @@
+{
+  "name": "status-report-service",
+  "version": "1.0.0",
+  "description": "API For gathering particlar url or host status report from relatime database and connect frontend to realtime status changes event",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rajdeep Das",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "request": "^2.88.2",
+    "rethinkdb": "^2.4.2",
+    "rethinkdb-pool": "^1.1.0",
+    "rethinkdbdash": "^2.3.31",
+    "socket.io": "^2.3.0"
+  }
+}

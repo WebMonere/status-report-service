@@ -1,0 +1,11 @@
+r.db('UrlStatus').table('urlstat').indexCreate('timestamp');
+r.db('UrlStatus').table('urlstat').indexCreate('uid');
+-----------------------------------------------------------------
+ 
+----------------------------------------------------------------------------------------------------
+getLastUpdateDatabyUid(uid)
+
+r.db('UrlStatus').table('urlstat').orderBy({index: r.desc('timestamp')}).filter({uid:'1'}).limit(1)
+----------------------------------------------------------------------------------------------------
+getLastUpdateDatabyUid(limitval)
+r.db('UrlStatus').table('urlstat').orderBy({index: r.desc('timestamp')}).filter({uid:'1'}).limit(10)
